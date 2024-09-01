@@ -5,6 +5,10 @@ html, body {
   
   header {
     background-color: #333333;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
   }
   
   nav {
@@ -17,9 +21,13 @@ html, body {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 12px;
+    display: inline-block;
+    width: 80px;
   }
   
   main {
+    position: relative;
+    top: 80px;
     text-align: center;
   }
   
@@ -93,6 +101,8 @@ html, body {
   .supporting .col {
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    display: inline-block;
+    width: 200px;
   }
   
   .supporting img {
