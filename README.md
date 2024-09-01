@@ -15,3 +15,11 @@ that you’ve learned so that her fans have plenty to read.
 The Aguillar Family is hosting their annual wine festival and they have asked 
 you to build a web page for the event schedule! Use your knowledge of HTML to 
 display a table to the attendees.
+
+### Section: Semantic HTML
+#### Project: NYC Blog
+Create a blog about New York City using various semantic elements to show off 
+how amazing the Big Apple is!  
+After researching New York City, you decide to create a blog for your viewers 
+who want to know more about the city. It’s time to create a blog to show off 
+how amazing the Big Apple is. You got this!
