@@ -23,3 +23,11 @@ how amazing the Big Apple is!
 After researching New York City, you decide to create a blog for your viewers 
 who want to know more about the city. It’s time to create a blog to show off 
 how amazing the Big Apple is. You got this!
+
+## Course: Fundamentals of CSS
+### Section: Learn CSS: Selectors and Visual Rules
+#### Project: Healthy Recipes
+Using CSS selectors, you’ll give a recipe website style.
+
+### Section: Learn CSS: Selectors and Visual Rules
+#### Project: Olivia Woodruff Portfolio
