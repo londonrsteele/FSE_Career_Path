@@ -1,0 +1,41 @@
+* {
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Rock Salt', sans-serif;
+    text-align: center;
+}
+
+main {
+    background-color: lightgray;
+    border-radius: 50px;
+    padding: 2%;
+}
+
+table {
+    margin: 0 auto;
+    border: 5px solid black;
+    width: 1200px;
+}
+
+th {
+    background-color: lightgreen;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: lightgoldenrodyellow;
+}
+
+
+tr:hover {
+    background-color: lightgreen;
+}
