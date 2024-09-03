@@ -1,4 +1,4 @@
-# FSE_Career_Path
+# FSE Career Path
 A repo for the projects in Codecademy's Full-Stack Engineer Career Path
 
 ## Course: Fundamentals of HTML
@@ -56,8 +56,8 @@ supporting sections (Design, Develop, Deploy) below the image.
 
 
 ## Course: Improved Styling with CSS
-## Section: Challenge Project
-### Project: Challenge Project: Build Your Own Cheat Sheet
+### Section: Challenge Project
+#### Project: Challenge Project: Build Your Own Cheat Sheet
 This project is slightly different than others you have encountered thus far on
 Codecademy. Instead of a step-by-step tutorial, this project contains a series 
 of open-ended requirements which describe the project you’ll be building. There 
@@ -69,8 +69,8 @@ build more websites in the future! Although there are great places to learn HTML
 & CSS like Codecademy, the best reference for yourself is often your own notes 
 and projects.
 
-## Section: Learn Links and Buttons
-### Project: The Summit
+### Section: Learn Links and Buttons
+#### Project: The Summit
 Time to put some navigation design knowledge to the test! Your goal is to 
 improve the user experience of this ski lodge landing page. Currently, none of
 the clickable elements are very clear or offer good visual feedback to users.
