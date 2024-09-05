@@ -2,3 +2,146 @@
  * Author  : LR Steele
  * README  : TeaCozy_README.m
 */
+* {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 22px; /* sets 1em to 22px */
+}
+
+header {
+    height: 69px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    z-index: 2;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-link {
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    top: 90px; /* 69px+1px+20px = 90px */
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+section {
+    margin: 0px auto 25px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.Mission-Section {
+    height: 700px;
+    width: 1200px;
+    background-image: url("assets/background.jpg");
+    justify-content: center;
+    align-content: center;
+}
+
+.Mission-Section > h2, .Mission-Section > h4 {
+    padding: 8px;
+    min-width: 1200px;
+}
+
+.TOTM-Section {
+    width: 1000px;
+    align-content: center;
+}
+
+.TOTM-Section > h2, .TOTM-Section > h4 {
+    padding: 8px;
+}
+
+.Tea-Figures {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Tea-Figure {
+    margin: 10px;
+}
+
+.Tea-Image {
+    width: 300px;
+    height: 200px;
+}
+
+.Tea-Figure-Caption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.Locations-Section {
+    height: 500px;
+    width: 1200px;
+    background-image: url("assets/locations.jpg")
+}
+
+.Locations-Section > h2 {
+    background-color: transparent;
+}
+
+.Locations {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15px;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.Location {
+    width: 300px;
+    min-height: 250px;
+    margin: 0px 20px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Contact-Footer {
+    position: relative;
+    top: 90px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.Copyright-Footer {
+    position: relative;
+    top: 90px;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
