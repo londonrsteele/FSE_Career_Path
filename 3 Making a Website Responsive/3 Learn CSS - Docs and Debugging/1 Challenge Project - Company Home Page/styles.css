@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Open Sans", monospace;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+@media only screen and (min-width: 1040px) {
+    header {
+        height: 4rem;
+        justify-content: space-between;
+    }
+    nav {
+        min-width: 775px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1039px) {
+    header {
+        height: 6rem;
+        justify-content: space-around;
+    }
+
+    nav {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        height: 10rem;
+        justify-content: space-around;
+
+    }
+
+    nav {
+        max-width: 200px;
+    }
+}
+
+header {
+    min-width: 450px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.Logo-Link {
+    margin-left: 3%;
+}
+
+.Logo-Image {
+    height: 3rem;
+    margin-left: 3%;
+} 
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-right: 3%;
+    font-weight: bold;
+}
+
+ul > a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.downarrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 9px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* Main */
+
+main {
+    min-width: 450px;
+    min-height: 100vh;
+    background-image: url("assets/images/Keychron-K10-Max-splash.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.About-Us {
+    z-index: 1;
+    background-color: grey;
+    min-width: 450px;
+    max-width: 450px;
+    padding: 3%;
+    max-height: 22rem;
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: justify;
+}
+
+.Features {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 450px;
+    padding: 5% 8%;
+    justify-content: center;
+    align-content: center;
+}
+
+.Feature-Image {
+    height: 170px;
+    margin: 0px 16px;
+}
+
+.Feature-Label {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 3rem;
+    min-width: 450px;
+    color: grey;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
