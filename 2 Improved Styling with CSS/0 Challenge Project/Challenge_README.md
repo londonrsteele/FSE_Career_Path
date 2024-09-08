@@ -1,4 +1,4 @@
-# Fundamentals of CSS > Improved Styling with CSS > Challenge Project: Build Your Own Cheat Sheet
+# Improved Styling with CSS > Challenge Project: Build Your Own Cheat Sheet
 ## Project Description
 ### **Overview**
 This project is slightly different than others you have encountered thus far on

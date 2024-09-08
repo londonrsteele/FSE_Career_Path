@@ -1,4 +1,4 @@
-# Fundamentals of CSS > Making a Website Responsive > Learn Responsive Design > Tsunami Coffee
+# Making a Website Responsive > Learn Responsive Design > Tsunami Coffee
 ## Project Description
 Use your knowledge of relative units and responsive web design to help Tsunami
 Coffee make their website come to life.

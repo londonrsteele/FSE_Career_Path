@@ -1,4 +1,4 @@
-# Fundamentals of CSS > Making a Website Responsive > Learn CSS - Grid > Task Board
+# Making a Website Responsive > Learn CSS - Grid > Task Board
 ## Project Description
 In this project, you will create a board of to-do items organized into columns.
 All of the HTML and most of the CSS have been written for you, but the grid 

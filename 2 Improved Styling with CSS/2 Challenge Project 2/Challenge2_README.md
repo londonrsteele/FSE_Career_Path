@@ -1,4 +1,4 @@
-# Fundamentals of CSS > Improved Styling with CSS > Challenge Project: Build Your Own Website Design System
+# Improved Styling with CSS > Challenge Project: Build Your Own Website Design System
 ## Project Description
 ### **Overview**
 This project is slightly different than others you have encountered thus far on

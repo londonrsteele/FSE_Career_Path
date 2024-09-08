@@ -1,4 +1,4 @@
-# Fundamentals of CSS > Making a Website Responsive > Flexbox: To-Do App
+# Making a Website Responsive > Flexbox: To-Do App
 ## Project Description
 Set the Flexbox properties for a to-do app.
 In this project, you will follow step-by-step instructions to fix a to-do web

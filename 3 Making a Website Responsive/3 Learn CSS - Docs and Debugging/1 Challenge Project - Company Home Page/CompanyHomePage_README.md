@@ -1,4 +1,4 @@
-# Fundamentals of CSS > Making a Website Responsive > Challenge Project: Company Home Page with Flexbox
+# Making a Website Responsive > Challenge Project: Company Home Page with Flexbox
 ## Overview
 ​This project is slightly different than others you have encountered thus far 
 on Codecademy. Instead of a step-by-step tutorial, this project contains a 

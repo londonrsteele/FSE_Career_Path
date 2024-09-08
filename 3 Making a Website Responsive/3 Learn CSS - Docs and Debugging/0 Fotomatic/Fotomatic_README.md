@@ -1,4 +1,4 @@
-# Fundamentals of CSS > Making a Website Responsive > Learn CSS: Documentation and Debugging > Off-Platform Project: Fotomatic
+# Making a Website Responsive > Learn CSS: Documentation and Debugging > Off-Platform Project: Fotomatic
 ## Project Description
 In this project, you will fix a broken version of a responsive website called 
 Fotomatic. You will be provided with specs to help guide you in making 

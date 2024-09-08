@@ -1,4 +1,4 @@
-# Fundamentals of CSS > Making a Website Responsive > Off-Platform Project: Tea Cozy
+# Making a Website Responsive > Off-Platform Project: Tea Cozy
 ## Project Description
 We will provide a design spec and image assets to help you along the way. A 
 design spec is an image of a web page outlined with all of its CSS properties 

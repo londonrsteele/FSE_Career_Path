@@ -1,4 +1,4 @@
-# Fundamentals of CSS > Improved Styling with CSS > Learn Links and Buttons > The Summit
+# Improved Styling with CSS > Learn Links and Buttons > The Summit
 ## Project Description
 Time to put some navigation design knowledge to the test! Your goal is to 
 improve the user experience of this ski lodge landing page. Currently, none of

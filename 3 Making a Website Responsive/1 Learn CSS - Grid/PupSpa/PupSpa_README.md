@@ -1,4 +1,4 @@
-# Fundamentals of CSS > Making a Website Responsive > Learn CSS - Grid > PupSpa
+# Making a Website Responsive > Learn CSS - Grid > PupSpa
 ## Project Description
 Let’s practice what we’ve just learned about CSS Grid through building a 
 classic, grid-based, responsive web page. Your friend has just opened a doggie 
