@@ -24,3 +24,59 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
+/***************************************************************************
+ * validateCred
+ * parameter: array of credit card numbers to validate
+ * return: true if array is valid, false if invalid (validity based on Luhn algorithm)
+ * NOTE: this function should NOT mutate the values of the passed array
+ */
+const validateCred = array => {
+    /* Luhn algorithm:
+     * 1. Starting from farthest digit to the right, AKA the check digit, 
+     *    iterate to the left.
+     * 2. As you iterate to the left, every other digit is doubled (the check)
+     *    digit is not doubled). If the number is greater than 9 after doubling,
+     *    subtract 9 from its value.
+     * 3. Sum up all the digits in the credit card number.
+     * 4. If the sum modulo 10 is 0 (if the sum divided by 10 has a remainder of
+     *    0) then the number is valid, otherwise, it's invalid.
+     */
+    // 1. Iterate to from R <-- L
+    let checkDigit = array[array.length-1];
+    let doubledArray = [];
+    // 2. double every other digit, starting after check digit (1st pass = no double)
+    let double = false;
+    for(let i = array.length-1; i >= 0; i--){
+        if(double) {
+            double = false;
+            let doubled = array[i] * 2;
+            if(doubled > 9){
+                doubled -= 9;
+            }
+            doubledArray.push(doubled);
+        } else {
+            double = true;
+            doubledArray.push(array[i]);
+        }
+    }
+    // 3. Sum 
+    let sum_doubledArray = doubledArray.reduce((accumulator, currValue) => accumulator+currValue);
+    // 4. Check validity
+    if(sum_doubledArray % 10 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Test validateCred
+console.log(validateCred(valid1)); // should return true
+console.log(validateCred(valid2)); // should return true
+console.log(validateCred(valid3)); // should return true
+console.log(validateCred(valid4)); // should return true
+console.log(validateCred(valid5)); // should return true
+console.log(validateCred(invalid1)); // should return false
+console.log(validateCred(invalid2)); // should return false
+console.log(validateCred(invalid3)); // should return false
+console.log(validateCred(invalid4)); // should return false
+console.log(validateCred(invalid5)); // should return false
