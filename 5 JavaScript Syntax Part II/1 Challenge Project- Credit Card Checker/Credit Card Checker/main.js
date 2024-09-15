@@ -70,13 +70,20 @@ const validateCred = array => {
 }
 
 // Test validateCred
-console.log(validateCred(valid1)); // should return true
-console.log(validateCred(valid2)); // should return true
-console.log(validateCred(valid3)); // should return true
-console.log(validateCred(valid4)); // should return true
-console.log(validateCred(valid5)); // should return true
-console.log(validateCred(invalid1)); // should return false
-console.log(validateCred(invalid2)); // should return false
-console.log(validateCred(invalid3)); // should return false
-console.log(validateCred(invalid4)); // should return false
-console.log(validateCred(invalid5)); // should return false
+console.log(batch.map(validateCred)); // 5 valid, 5 invalid, 2 valid mystery, 3 invalid mystery
+
+/***************************************************************************
+ * findInvalidCards
+ * parameter: nested array of credit card numbers
+ * return: a new nested array of invalid credit card numbers
+ * NOTE: this function should NOT mutate the values of the passed array
+ */
+const findInvalidCards = array => {
+    let invalidCards = array.filter(value => !validateCred(value)); // have to inverse usage (!)
+    return invalidCards;
+}
+
+// Test validateCred
+let invalidCards = findInvalidCards(batch); // should return 8 invalid cards
+console.log(invalidCards.length);
+
