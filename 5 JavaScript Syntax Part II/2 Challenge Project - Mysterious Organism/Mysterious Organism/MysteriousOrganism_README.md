@@ -31,6 +31,17 @@ development (Follow along until you get to the section: “Practice: Let’s Mak
 Project”). To run main.js on your computer, you will need to install Node.js. If
 you need help installing Node.js, read our article on installing Node.
 
+## Project Requirements
+Look over the starter code. There are two helper functions: returnRandBase() and
+mockUpStrand().
+DNA is comprised of four bases (Adenine, Thymine, Cytosine, and Guanine). When 
+returnRandBase() is called, it will randomly select a base and return the base
+('A','T','C', or 'G').
+mockUpStrand() is used to generate an array containing 15 bases to represent a 
+single DNA strand with 15 bases.
+You’ll use these helper functions later to create your objects that represent 
+P. aequor.
+
 ## Files
 `main.js`
 
