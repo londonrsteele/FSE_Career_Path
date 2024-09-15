@@ -52,8 +52,39 @@ const Joke4 = JokeFactory(`Knock, knock!`, `Kanga`, `Actually, it's kanga-roo.`)
 const Joke5 = JokeFactory(`Knock, knock!`, `Luke`, `Luke through the peephole and find out.`);
 
 // Test tellJoke
-Joke1.tellJoke();
-Joke2.tellJoke();
-Joke3.tellJoke();
-Joke4.tellJoke();
-Joke5.tellJoke();
+// Joke1.tellJoke();
+// Joke2.tellJoke();
+// Joke3.tellJoke();
+// Joke4.tellJoke();
+// Joke5.tellJoke();
+
+// Create some randomness!
+/**********************************************************************
+ * pickRandomJoke()
+ * parameter: array - an array of Joke objects
+ * return: a random Joke object
+ */
+const pickRandomJoke = array => {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+/**********************************************************************
+ * makeRandomJoke()
+ * parameter: array - an array of Joke objects
+ * return: a random Joke object
+ */
+const makeRandomJoke = array => {
+    const setupJoke = pickRandomJoke(array);
+    const deliveryJoke = pickRandomJoke(array);
+    const punchlineJoke = pickRandomJoke(array);
+
+    return JokeFactory(setupJoke.setup, deliveryJoke.delivery, punchlineJoke.punchline);
+}
+
+// Test pickRandomJoke
+const JokeArray = [Joke1, Joke2, Joke3, Joke4, Joke5];
+// console.log(pickRandomJoke(JokeArray));
+
+// Test makeRandomJoke
+const randomJoke1 = makeRandomJoke(JokeArray);
+randomJoke1.tellJoke();
