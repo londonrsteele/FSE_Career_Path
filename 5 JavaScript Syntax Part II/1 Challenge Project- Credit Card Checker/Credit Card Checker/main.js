@@ -87,3 +87,44 @@ const findInvalidCards = array => {
 let invalidCards = findInvalidCards(batch); // should return 8 invalid cards
 console.log(invalidCards.length);
 
+/***************************************************************************
+ * idInvalidCardCompanies
+ * parameter: nested array of invalid credit card numbers
+ * return: an array of companies
+ * NOTE: this function should NOT mutate the values of the passed array
+ * NOTE: this function should NOT return duplicates (even if >1 for same company)
+ */
+const idInvalidCardCompanies = array => {
+    /* Currently, there are 4 accepted companies which each have unique 1st digits:
+     * 3 : Amex
+     * 4 : Visa
+     * 5 : Mastercard
+     * 6 : Discover
+     */
+    let companies = [];
+    let amex = false;
+    let visa = false;
+    let mstr = false;
+    let disc = false;
+    for(let card in array) {
+        if(array[card][0] === 3 && !amex){
+            amex = true;
+            companies.push('Amex');
+        } else if(array[card][0] === 4 && !visa){
+            visa = true;
+            companies.push('Visa');
+        } else if(array[card][0] === 5 && !mstr){
+            mstr = true;
+            companies.push('Mastercard');
+        } else if(array[card][0] === 6 && !disc){
+            disc = true;
+            companies.push('Discover');
+        } else if(array[card][0] != 3 && array[card][0] != 4 && array[card][0] != 5 && array[card][0] != 6){
+            console.log('Company not found!');
+        }
+    }
+    return companies;
+}
+
+// Test idInvalidCardCompanies
+console.log(idInvalidCardCompanies(invalidCards)); // 1 of each, no errors
