@@ -38,16 +38,57 @@ class School {
     }
 }
 
+/***************************************
+ * Primary class
+ * extends School
+ * inherited properties: name, level, numberOfStudents
+ * inherited getters: all
+ * inherited setters: numberOfStudents
+ * inherited methods: quickFacts
+ * properties: pickupPolicy
+ * getters: pickupPolicy
+ * setters: pickupPolicy
+ */
+class Primary extends School {
+    constructor(name, numberOfStudents, pickupPolicy){
+        super(name, 'Primary', numberOfStudents);
+        this._pickupPolicy = pickupPolicy;
+    }
+    get pickupPolicy() {
+        return this._pickupPolicy;
+    }
+    set pickupPolicy(string) {
+        this._pickupPolicy = string;
+    }
+}
+
 /*******************************************************************************
  * Testing Classes
  */
 const substituteTeachers = ['Nancy', 'Claire', 'Clarissa', 'Jenny'];
 
+// Testing static functions
+console.log(`---------------------Testing Static Functions---------------------`);
 console.log(School.pickSubstituteTeacher(substituteTeachers));
+console.log(Primary.pickSubstituteTeacher(substituteTeachers));
 
+// Testing School (parent) class
+console.log(`---------------------Testing School Class---------------------`);
 const School0 = new School('School0', 'Primary', 1);
 console.log(School0);
 console.log(School0.name);
 console.log(School0.level);
 console.log(School0.numberOfStudents);
 School0.quickFacts();
+
+// Testing Primary (child) class
+console.log(`---------------------Testing Primary Class---------------------`);
+const ACES = new Primary('Archer City Elementary School', 200, "Pick up out front at 2:50pm.");
+console.log(ACES);
+console.log(ACES.name);
+console.log(ACES.level);
+console.log(ACES.numberOfStudents);
+console.log(ACES.pickupPolicy);
+ACES.quickFacts();
+
+
