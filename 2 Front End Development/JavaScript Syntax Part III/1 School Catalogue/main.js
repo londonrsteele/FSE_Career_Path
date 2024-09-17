@@ -77,10 +77,37 @@ class Middle extends School {
     }
 }
 
+
+/***************************************
+ * High class
+ * extends School
+ * inherited properties: name, level, numberOfStudents
+ * inherited getters: all
+ * inherited setters: numberOfStudents
+ * inherited methods: quickFacts
+ * properties: sportsTeams
+ * getters: sportsTeams
+ * setters: sportsTeams
+ */
+class High extends School {
+    constructor(name, numberOfStudents, sportsTeams){
+        super(name, 'Primary', numberOfStudents);
+        this._sportsTeams = sportsTeams;
+    }
+    get sportsTeams() {
+        return this._sportsTeams;
+    }
+    set sportsTeams(array) {
+        this._sportsTeams = array;
+    }
+}
+
 /*******************************************************************************
  * Testing Classes
  */
 const substituteTeachers = ['Nancy', 'Claire', 'Clarissa', 'Jenny'];
+const pickupPolicy = 'This is an example Pick Up Policy.';
+const sportsTeams = ['These', 'are', 'example', 'sports', 'teams'];
 
 // Testing static functions
 console.log(`---------------------Testing Static Functions---------------------`);
@@ -104,6 +131,8 @@ console.log(ACES.name);
 console.log(ACES.level);
 console.log(ACES.numberOfStudents);
 console.log(ACES.pickupPolicy);
+ACES.pickupPolicy = pickupPolicy;
+console.log(ACES.pickupPolicy);
 ACES.quickFacts();
 
 // Testing Middle (child) class
@@ -114,3 +143,16 @@ console.log(ACMS.name);
 console.log(ACMS.level);
 console.log(ACMS.numberOfStudents);
 ACMS.quickFacts();
+
+
+// Testing Primary (child) class
+console.log(`---------------------Testing High Class---------------------`);
+const ACHS = new High('Archer City High School', 160, ['Football', 'Volleyball', 'Basketball', 'Track & Field']);
+console.log(ACHS);
+console.log(ACHS.name);
+console.log(ACHS.level);
+console.log(ACHS.numberOfStudents);
+console.log(ACHS.sportsTeams);
+ACHS.sportsTeams = sportsTeams;
+console.log(ACHS.sportsTeams);
+ACES.quickFacts();
