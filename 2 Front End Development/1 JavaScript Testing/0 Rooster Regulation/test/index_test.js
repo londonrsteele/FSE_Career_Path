@@ -19,4 +19,19 @@ describe('Rooster', () => {
       // no teardown
     });
   });
+  describe('.timeAtDawn', () => {
+    it('returns its argument as a string', () => {
+      // setup
+      const expected = '5';
+      
+      // exercise
+      const result = Rooster.timeAtDawn(5);
+
+      // verify
+      assert.strictEqual(result, expected);
+
+      // teardown
+      // no teardown
+    });
+  });
 });
