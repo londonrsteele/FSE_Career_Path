@@ -62,6 +62,21 @@ class Primary extends School {
     }
 }
 
+
+/***************************************
+ * Middle class
+ * extends School
+ * inherited properties: name, level, numberOfStudents
+ * inherited getters: all
+ * inherited setters: numberOfStudents
+ * inherited methods: quickFacts
+ */
+class Middle extends School {
+    constructor(name, numberOfStudents,){
+        super(name, 'Middle', numberOfStudents);
+    }
+}
+
 /*******************************************************************************
  * Testing Classes
  */
@@ -91,4 +106,11 @@ console.log(ACES.numberOfStudents);
 console.log(ACES.pickupPolicy);
 ACES.quickFacts();
 
-
+// Testing Middle (child) class
+console.log(`---------------------Testing Middle Class---------------------`);
+const ACMS = new Middle('Archer City Middle School', 60, "Pick up out front at 3:15pm.");
+console.log(ACMS);
+console.log(ACMS.name);
+console.log(ACMS.level);
+console.log(ACMS.numberOfStudents);
+ACMS.quickFacts();
