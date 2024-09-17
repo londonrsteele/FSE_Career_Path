@@ -22,13 +22,13 @@ class Media {
     }
     toggleCheckOutStatus() {
       if(this.isCheckedOut) {
-        this.isCheckedOut(false);
+        this.isCheckedOut = false;
       } else {
-        this.isCheckedOut(true);
+        this.isCheckedOut = true;
       }
     }
     getAverageRating(){
-      let ratings_sum = this.ratings.reduce((currSum, rating) => currentSum + rating, 0);
+      let ratings_sum = this.ratings.reduce((currSum, rating) => currSum + rating, 0);
       let ratings_avg = ratings_sum / this.ratings.length;
       return ratings_avg;
     }
@@ -96,7 +96,7 @@ class Movie extends Media {
  * properties: artist, songs
  * methods: getters
  */
-class Movie extends Media {
+class CD extends Media {
     constructor(title, artist, songs){
         super(title);
         this._artist = artist;
@@ -109,3 +109,48 @@ class Movie extends Media {
         return this._songs;
     }
 }
+
+/*******************************************************************************
+ * Test classes
+ */
+// Test Book class
+console.log(`--------------- TESTING BOOK CLASS ---------------`);
+const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everything', 544);
+console.log(historyOfEverything);
+historyOfEverything.toggleCheckOutStatus();
+console.log(historyOfEverything.isCheckedOut);
+historyOfEverything.toggleCheckOutStatus();
+console.log(historyOfEverything.isCheckedOut);
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+historyOfEverything.addRating(5);
+console.log(historyOfEverything);
+console.log(historyOfEverything.getAverageRating());
+
+// Test Movie Class
+console.log(`--------------- TESTING MOVIE CLASS ---------------`);
+const speed = new Movie('Speed', 'Jan de Bont', 116);
+console.log(speed);
+speed.toggleCheckOutStatus();
+console.log(speed.isCheckedOut);
+speed.toggleCheckOutStatus();
+console.log(speed.isCheckedOut);
+speed.addRating(1);
+speed.addRating(1);
+speed.addRating(5);
+console.log(speed);
+console.log(speed.getAverageRating());
+
+// Test CD Class
+console.log(`--------------- TESTING CD CLASS ---------------`);
+const scienceFiction = new CD('Science Fiction', 'Brand New', 12);
+console.log(scienceFiction);
+scienceFiction.toggleCheckOutStatus();
+console.log(scienceFiction.isCheckedOut);
+scienceFiction.toggleCheckOutStatus();
+console.log(scienceFiction.isCheckedOut);
+scienceFiction.addRating(5);
+scienceFiction.addRating(4);
+scienceFiction.addRating(5);
+console.log(scienceFiction);
+console.log(scienceFiction.getAverageRating());
