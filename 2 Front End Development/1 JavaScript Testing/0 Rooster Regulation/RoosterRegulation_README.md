@@ -13,5 +13,9 @@ assert methods from the Node.js standard library. If you’re unsure about any o
 the methods, you can use the documentation linked.
 
 ## Files
-`index.js`  
-`index_test.js`
+`index.js` provided by Codecademy  
+`test`/`index_test.js` written by LR Steele  
+Below is from npm (Mocha):  
+`node_modules`/   
+`package.json`    
+`package-lock.json`   
