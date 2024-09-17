@@ -33,5 +33,19 @@ describe('Rooster', () => {
       // teardown
       // no teardown
     });
+    it('throws an error if passed a number less than 0', () => {
+        // setup
+        const hourBelowZero = -1;
+  
+        // exercise and verify
+        assert.throws( 
+          () => {
+            Rooster.timeAtDawn(hourBelowZero);
+          },
+          RangeError
+        );
+        // teardown
+        // no teardown
+    });
   });
 });
