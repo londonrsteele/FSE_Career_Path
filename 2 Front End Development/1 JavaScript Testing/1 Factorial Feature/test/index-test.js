@@ -19,5 +19,8 @@ describe('Calculate', () => {
         // Verify
         assert.equal(actual, expected);
     });
+    it('edge case: 0! is equal to 1', () => {
+        assert.equal(Calculate.factorial(0), 1);
+    });
   });
 });
