@@ -47,5 +47,19 @@ describe('Rooster', () => {
         // teardown
         // no teardown
     });
+    it('throws an error if passed a number greater than 23', () => {
+        // setup
+        const hourAbove23 = 24;
+  
+        // exercise and verify
+        assert.throws( 
+          () => {
+            Rooster.timeAtDawn(hourAbove23);
+          },
+          RangeError
+        );
+        // teardown
+        // no teardown
+    });
   });
 });
