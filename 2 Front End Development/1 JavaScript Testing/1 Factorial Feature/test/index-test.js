@@ -11,5 +11,8 @@ describe('Calculate', () => {
         // Verify
         assert.equal(actual, expected);
     });
+    it('test if 3! is equal to 6', () => {
+        assert.equal(Calculate.factorial(3), 6);
+    });
   });
 });
