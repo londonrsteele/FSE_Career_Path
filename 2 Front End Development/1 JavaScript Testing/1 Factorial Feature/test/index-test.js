@@ -20,7 +20,12 @@ describe('Calculate', () => {
         assert.equal(actual, expected);
     });
     it('edge case: 0! is equal to 1', () => {
-        assert.equal(Calculate.factorial(0), 1);
+        // Setup
+        const expected = 1;
+        // Exercise
+        const actual = Calculate.factorial(0);
+        // Verify
+        assert.equal(actual, expected);
     });
   });
 });
