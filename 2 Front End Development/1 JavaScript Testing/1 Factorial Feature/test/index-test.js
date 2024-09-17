@@ -12,7 +12,12 @@ describe('Calculate', () => {
         assert.equal(actual, expected);
     });
     it('test if 3! is equal to 6', () => {
-        assert.equal(Calculate.factorial(3), 6);
+        // Setup
+        const expected = 6;
+        // Exercise
+        const actual = Calculate.factorial(3);
+        // Verify
+        assert.equal(actual, expected);
     });
   });
 });
